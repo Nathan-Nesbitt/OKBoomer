@@ -147,11 +147,13 @@ Gets the information about a user if logged in. Produces the
 personal information if the current user's ID is the same as
 the requested user, else it requests the public information.
 
+#### GET
+
 ```
 GET [domain]/Users/Info/<ID>
 
 # Example with ID
-POST 
+GET 
     okboomer.nesbitt.ca/Users/Info/1
     
     contents: 
@@ -159,7 +161,86 @@ POST
     
     returns:
         name="Nathan"
+        about="I am an old person looking for love."
 ```
+
+#### POST
+
+```
+POST [domain]/Users/Info/<ID>
+
+# Example with ID
+POST
+    okboomer.nesbitt.ca/Users/Info/1
+    
+    contents: 
+        loggedIn=<key>
+        name="Greg"
+        about="I am a young person looking for love."
+```
+
+
+### `/Users/Info/ContactInfo/<UserID>`
+
+Get or add contact info for a user.
+
+#### GET
+```
+GET [domain]/Users/ContactInfo/<UserID>
+
+# Example with ID
+GET
+    okboomer.nesbitt.ca/Users/ContactInfo/1
+    
+    contents: 
+        loggedIn=<key>
+```
+
+#### POST
+```
+POST [domain]/Users/ContactInfo/<UserID>
+
+# Example with ID
+POST
+    okboomer.nesbitt.ca/ContactInfo/1
+    
+    contents: 
+        loggedIn=<key>
+        contactValue="contactValue"
+```
+
+### `/Users/Info/ContactInfo/<UserID>/<ContactID>`
+
+Update or Delete contact value
+
+#### POST
+
+```
+POST [domain]/Users/ContactInfo/<UserID>/<ContactID>
+
+# Example with ID
+POST
+    okboomer.nesbitt.ca/Users/ContactInfo/1/1
+    
+    contents: 
+        loggedIn=<key>
+        contactValue="contactValue"
+```
+
+#### DELETE
+
+```
+DELETE [domain]/Users/ContactInfo/<UserID>/<ContactID>
+
+# Example with ID
+DELETE
+    okboomer.nesbitt.ca/ContactInfo/1/1
+    
+    contents: 
+        loggedIn=<key>
+```
+
+
 
 ### `/Users/Info/Location/<ID>`
 
@@ -394,7 +475,7 @@ GET
         loggedIn=<key>
 ```
 
-
+ 
 ### `/Users/Matches/<UserID>/<MatchID>`
 
 Allows for the deletion of a match.
