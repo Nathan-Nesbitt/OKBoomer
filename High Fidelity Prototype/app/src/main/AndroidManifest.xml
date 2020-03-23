@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mainSelection"></activity>
+        <activity android:name=".message_general"></activity>
+        <activity android:name=".mainSelection" />
         <activity android:name=".createAccount1" />
         <activity android:name=".login_or_create">
             <intent-filter>
