@@ -16,6 +16,7 @@ public class message_general extends AppCompatActivity {
 
 
     private RecyclerView recyclerView;
+    private RecyclerView matchRecyclerView;
     //private CardAdapter adapter;
     private RecyclerView.Adapter recyclerAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -24,13 +25,15 @@ public class message_general extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message_general);
 
+        //set up recycler view for messages
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
-
         // use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         MyAdapter myAdapter = new MyAdapter();
         recyclerView.setAdapter(myAdapter);
+
+        //initialize arrayLists for values (eventually replace with values from the database)
         ArrayList<String> usersCW = new ArrayList<>();
         usersCW.add("Bob");
         usersCW.add("Dot");
@@ -55,7 +58,6 @@ public class message_general extends AppCompatActivity {
         msg.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");
         msg.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");
         msg.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");
-
         ArrayList<Integer> img = new ArrayList<>();
         img.add((R.drawable.bob));
         img.add((R.drawable.dot));
@@ -64,8 +66,38 @@ public class message_general extends AppCompatActivity {
         img.add((R.drawable.lorrain));
         img.add((R.drawable.harry));
         img.add((R.drawable.beverly));
-
+        //send to recycler
         myAdapter.setItems(usersCW, time, msg, img);
+
+        //set up recycler for matches
+        LinearLayoutManager layoutManager
+                = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        matchRecyclerView = (RecyclerView) findViewById(R.id.my_matches);
+        // use this setting to improve performance if you know that changes
+        // in content do not change the layout size of the RecyclerView
+        matchRecyclerView.setLayoutManager(layoutManager);
+        matchesAdapter matchAdapter = new matchesAdapter();
+        matchRecyclerView.setAdapter(matchAdapter);
+
+        //initialize arrayList for values  (eventually replace with values from database)
+        ArrayList<String> userMatches = new ArrayList<>();
+        userMatches.add("Alice");
+        userMatches.add("Dot");
+        userMatches.add("Steve");
+        userMatches.add("Carl");
+        userMatches.add("Lorraine");
+        userMatches.add("Harry");
+        userMatches.add("Beverly");
+        ArrayList<Integer> matchImg = new ArrayList<>();
+        matchImg.add((R.drawable.alice));
+        matchImg.add((R.drawable.dot));
+        matchImg.add((R.drawable.steve));
+        matchImg.add((R.drawable.carl));
+        matchImg.add((R.drawable.lorrain));
+        matchImg.add((R.drawable.harry));
+        matchImg.add((R.drawable.beverly));
+
+        matchAdapter.setItems(userMatches, matchImg);
 
         }
     }
