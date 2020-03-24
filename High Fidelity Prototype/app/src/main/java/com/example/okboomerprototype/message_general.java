@@ -4,15 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
-import android.media.Image;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import java.sql.Array;
 import java.util.ArrayList;
 
-public class message_general extends AppCompatActivity {
+public class message_general extends AppCompatActivity implements MyAdapter.ContactViewHolder.OnUserListener {
 
 
     private RecyclerView recyclerView;
@@ -20,6 +18,7 @@ public class message_general extends AppCompatActivity {
     //private CardAdapter adapter;
     private RecyclerView.Adapter recyclerAdapter;
     private RecyclerView.LayoutManager layoutManager;
+    ArrayList<String> usersCW;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +33,7 @@ public class message_general extends AppCompatActivity {
         recyclerView.setAdapter(myAdapter);
 
         //initialize arrayLists for values (eventually replace with values from the database)
-        ArrayList<String> usersCW = new ArrayList<>();
+        usersCW = new ArrayList<>();
         usersCW.add("Bob");
         usersCW.add("Dot");
         usersCW.add("Steve");
@@ -67,7 +66,7 @@ public class message_general extends AppCompatActivity {
         img.add((R.drawable.harry));
         img.add((R.drawable.beverly));
         //send to recycler
-        myAdapter.setItems(usersCW, time, msg, img);
+        myAdapter.setItems(usersCW, time, msg, img, this);
 
         //set up recycler for matches
         LinearLayoutManager layoutManager
@@ -99,5 +98,18 @@ public class message_general extends AppCompatActivity {
 
         matchAdapter.setItems(userMatches, matchImg);
 
-        }
     }
+
+    public void chatSpecific(View view){
+       Intent intent = new Intent(this, specific_chat.class);
+       startActivity(intent);
+    }
+
+    @Override
+    public void onUserClick(int position) {
+        String user = usersCW.get(position);
+        Intent intent = new Intent(this, specific_chat.class);
+        intent.putExtra("name", user);
+        startActivity(intent);
+    }
+}

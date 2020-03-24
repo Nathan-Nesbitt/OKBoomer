@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.okboomerprototype.specific_chat" />
         <activity
             android:name="com.example.okboomerprototype.ui.login.LoginActivity"
             android:label="@string/title_activity_login" />
