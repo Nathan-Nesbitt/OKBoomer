@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,7 +15,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="84dp"
         android:layout_marginRight="84dp"
-        android:background="#E9DEFF"
+        android:background="#00E9DEFF"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/smaller_profile" />
@@ -26,7 +27,7 @@
         android:layout_marginTop="18dp"
         android:layout_marginEnd="76dp"
         android:layout_marginRight="76dp"
-        android:background="#E9DEFF"
+        android:background="#00E9DEFF"
         app:layout_constraintEnd_toStartOf="@+id/imageButton5"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_small_button" />
@@ -35,10 +36,10 @@
         android:id="@+id/imageButton5"
         android:layout_width="79dp"
         android:layout_height="60dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:background="#E9DEFF"
+        android:background="#00E9DEFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/chat_highlight_button" />
@@ -71,5 +72,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="409dp"
+        android:layout_height="425dp"
+        android:layout_marginTop="76dp"
+        android:scrollbars="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
