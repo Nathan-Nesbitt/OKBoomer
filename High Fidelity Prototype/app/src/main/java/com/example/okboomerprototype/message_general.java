@@ -101,19 +101,14 @@ public class message_general extends AppCompatActivity implements MyAdapter.Cont
 
     }
 
-    public void chatSpecific(View view){
-       Intent intent = new Intent(this, specific_chat.class);
-       startActivity(intent);
-    }
 
     @Override
     public void onUserClick(int position) {
         String user = usersCW.get(position);
-        System.out.print(img.get(position));
-        //int id = img.get(position);
+        int id = img.get(position);
         Intent intent = new Intent(this, specific_chat.class);
         intent.putExtra("name", user);
-        //intent.putExtra("picID", id);
+        intent.putExtra("picID", id);
         startActivity(intent);
     }
 }
