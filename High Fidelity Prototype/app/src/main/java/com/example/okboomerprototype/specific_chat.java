@@ -23,6 +23,7 @@ public class specific_chat extends AppCompatActivity {
         intent = getIntent();
         String userName = intent.getStringExtra("name");
         int picID = intent.getIntExtra("picID", 0);
+        //Button b = findViewById(R.id.button_chatbox_send);
 
         //int picID = 0;
 //        switch(userName){
@@ -38,6 +39,7 @@ public class specific_chat extends AppCompatActivity {
         msg = new ArrayList<>();
         Message m = new Message();
         m.setUserName(userName);
+       // b.setText(m.getUserName());
         m.setImg(picID);
         m.setTime("7:45");
         m.setMsg("Hey there ;)");

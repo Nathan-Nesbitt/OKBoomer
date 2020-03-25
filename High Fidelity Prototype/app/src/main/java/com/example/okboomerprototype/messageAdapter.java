@@ -17,7 +17,7 @@ public class messageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 //    private ArrayList<String> messages = new ArrayList<>();
 //    private ArrayList<String> times = new ArrayList<>();
 //    private ArrayList<Integer> images = new ArrayList<>();
-    private ArrayList<Message> msgs = new ArrayList<>();
+    private ArrayList<Message> msgs;
     private Context context;
     private static final int VIEW_TYPE_MESSAGE_SENT = 1;
     private static final int VIEW_TYPE_MESSAGE_RECEIVED = 2;
@@ -59,10 +59,10 @@ public class messageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     @Override
     public void onBindViewHolder( RecyclerView.ViewHolder holder, int position) {
-        if(holder instanceof messageAdapter.ContactViewHolderSent){
-            ((messageAdapter.ContactViewHolderSent)holder).bind(msgs.get(position).getMsg(), msgs.get(position).getTime());
-        }else{
+        if(holder instanceof messageAdapter.ContactViewHolderReceived){
             ((messageAdapter.ContactViewHolderReceived)holder).bind(msgs.get(position).getUserName(), msgs.get(position).getTime(), msgs.get(position).getMsg(), msgs.get(position).getImg());
+        }else{
+            ((messageAdapter.ContactViewHolderSent)holder).bind(msgs.get(position).getMsg(), msgs.get(position).getTime());
         }
     }
 
@@ -121,13 +121,16 @@ public class messageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
         public ContactViewHolderSent(View itemView){
             super(itemView);
+            name = (TextView) itemView.findViewById(R.id.text_message_name);
             lastTime = (TextView) itemView.findViewById(R.id.text_message_time);
             lastMsg = (TextView) itemView.findViewById(R.id.text_message_body);
+            userPic = (ImageView) itemView.findViewById(R.id.image_message_profile);
         }
         public void bind(String msg, String time){
-
+            
             lastTime.setText(time);
             lastMsg.setText(msg);
+
 
         }
 
