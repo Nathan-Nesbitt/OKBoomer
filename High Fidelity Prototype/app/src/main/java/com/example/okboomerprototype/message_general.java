@@ -19,6 +19,7 @@ public class message_general extends AppCompatActivity implements MyAdapter.Cont
     private RecyclerView.Adapter recyclerAdapter;
     private RecyclerView.LayoutManager layoutManager;
     ArrayList<String> usersCW;
+    ArrayList<Integer> img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +58,7 @@ public class message_general extends AppCompatActivity implements MyAdapter.Cont
         msg.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");
         msg.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");
         msg.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");
-        ArrayList<Integer> img = new ArrayList<>();
+        img = new ArrayList<>();
         img.add((R.drawable.bob));
         img.add((R.drawable.dot));
         img.add((R.drawable.steve));
@@ -108,8 +109,11 @@ public class message_general extends AppCompatActivity implements MyAdapter.Cont
     @Override
     public void onUserClick(int position) {
         String user = usersCW.get(position);
+        System.out.print(img.get(position));
+        //int id = img.get(position);
         Intent intent = new Intent(this, specific_chat.class);
         intent.putExtra("name", user);
+        //intent.putExtra("picID", id);
         startActivity(intent);
     }
 }
