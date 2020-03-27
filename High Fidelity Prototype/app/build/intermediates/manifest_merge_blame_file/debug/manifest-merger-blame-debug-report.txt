@@ -11,7 +11,7 @@
 9-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:5:5-26:19
+11-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:5:5-27:19
 12        android:allowBackup="true"
 12-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -28,49 +28,52 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.okboomerprototype.specific_chat" />
-21-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:12:9-60
-21-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:12:19-48
-22        <activity
-22-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:13:9-15:60
-23            android:name="com.example.okboomerprototype.ui.login.LoginActivity"
-23-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:14:13-51
-24            android:label="@string/title_activity_login" />
-24-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:15:13-57
-25        <activity android:name="com.example.okboomerprototype.message_general" />
-25-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:16:9-53
-25-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:16:19-50
-26        <activity android:name="com.example.okboomerprototype.mainSelection" />
-26-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:17:9-51
-26-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:17:19-48
-27        <activity android:name="com.example.okboomerprototype.createAccount1" />
-27-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:18:9-52
-27-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:18:19-49
-28        <activity android:name="com.example.okboomerprototype.login_or_create" >
-28-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:19:9-25:20
-28-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:19:19-50
-29            <intent-filter>
-29-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:20:13-24:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:21:17-69
-30-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:21:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:23:17-77
-32-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:23:27-74
-33            </intent-filter>
-34        </activity>
-35
-36        <provider
-36-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-37            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-37-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-38            android:authorities="com.example.okboomerprototype.lifecycle-process"
-38-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-39            android:exported="false"
-39-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-40            android:multiprocess="true" />
-40-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-41    </application>
-42
-43</manifest>
+21        <activity android:name="com.example.okboomerprototype.matchScreen" />
+21-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:12:9-58
+21-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:12:19-46
+22        <activity android:name="com.example.okboomerprototype.specific_chat" />
+22-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:13:9-51
+22-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:13:19-48
+23        <activity
+23-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:14:9-16:60
+24            android:name="com.example.okboomerprototype.ui.login.LoginActivity"
+24-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:15:13-51
+25            android:label="@string/title_activity_login" />
+25-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:16:13-57
+26        <activity android:name="com.example.okboomerprototype.message_general" />
+26-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:17:9-53
+26-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:17:19-50
+27        <activity android:name="com.example.okboomerprototype.mainSelection" />
+27-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:18:9-51
+27-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:18:19-48
+28        <activity android:name="com.example.okboomerprototype.createAccount1" />
+28-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:19:9-52
+28-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:19:19-49
+29        <activity android:name="com.example.okboomerprototype.login_or_create" >
+29-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:20:9-26:20
+29-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:20:19-50
+30            <intent-filter>
+30-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:21:13-25:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:22:17-69
+31-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:22:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:24:17-77
+33-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:24:27-74
+34            </intent-filter>
+35        </activity>
+36
+37        <provider
+37-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+38            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+38-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+39            android:authorities="com.example.okboomerprototype.lifecycle-process"
+39-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+40            android:exported="false"
+40-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+41            android:multiprocess="true" />
+41-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+42    </application>
+43
+44</manifest>

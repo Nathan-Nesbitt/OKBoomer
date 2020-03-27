@@ -127,7 +127,7 @@ public class messageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             userPic = (ImageView) itemView.findViewById(R.id.image_message_profile);
         }
         public void bind(String msg, String time){
-            
+
             lastTime.setText(time);
             lastMsg.setText(msg);
 
