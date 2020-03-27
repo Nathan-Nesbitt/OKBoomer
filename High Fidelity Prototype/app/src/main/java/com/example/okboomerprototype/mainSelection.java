@@ -24,6 +24,10 @@ public class mainSelection extends AppCompatActivity {
         Intent intent = new Intent(this, message_general.class);
         startActivity(intent);
     }
+    public void toUser(View view){
+        Intent intent = new Intent(this, profilePage.class);
+        startActivity(intent);
+    }
 
     public void matchScreen(View view){
         Intent intent = new Intent(this, matchScreen.class);
