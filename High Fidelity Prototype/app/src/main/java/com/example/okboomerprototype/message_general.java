@@ -111,4 +111,12 @@ public class message_general extends AppCompatActivity implements MyAdapter.Cont
         intent.putExtra("picID", id);
         startActivity(intent);
     }
+    public void toProfile(View view){
+        Intent intent = new Intent(this, profilePage.class);
+        startActivity(intent);
+    }
+    public void backMain(View view){
+        Intent intent = new Intent(this, mainSelection.class);
+        startActivity(intent);
+    }
 }

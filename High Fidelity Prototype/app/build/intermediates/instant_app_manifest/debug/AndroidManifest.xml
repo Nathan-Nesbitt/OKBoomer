@@ -25,6 +25,11 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.okboomerprototype.help_doc" />
+        <activity android:name="com.example.okboomerprototype.contact_us" />
+        <activity android:name="com.example.okboomerprototype.help_me" />
+        <activity android:name="com.example.okboomerprototype.edit_profile" />
+        <activity android:name="com.example.okboomerprototype.settings" />
         <activity android:name="com.example.okboomerprototype.profilePage" />
         <activity android:name="com.example.okboomerprototype.send_message" />
         <activity android:name="com.example.okboomerprototype.match_confirmation" />

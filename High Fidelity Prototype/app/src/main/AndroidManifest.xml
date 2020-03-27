@@ -15,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".help_me"></activity>
+        <activity android:name=".help_doc"></activity>
+        <activity android:name=".contact_us" />
+        <activity android:name=".help_me" />
         <activity android:name=".edit_profile" />
         <activity android:name=".settings" />
         <activity android:name=".profilePage" />

@@ -15,6 +15,7 @@
         android:layout_marginEnd="84dp"
         android:layout_marginRight="84dp"
         android:background="#00E9DEFF"
+        android:onClick="toProfile"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/smaller_profile" />
@@ -26,6 +27,7 @@
         android:layout_marginTop="18dp"
         android:layout_marginEnd="76dp"
         android:layout_marginRight="76dp"
+        android:onClick="backMain"
         android:background="#00E9DEFF"
         app:layout_constraintEnd_toStartOf="@+id/imageButton5"
         app:layout_constraintTop_toTopOf="parent"
