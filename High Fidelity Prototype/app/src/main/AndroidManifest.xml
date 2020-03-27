@@ -15,7 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".profilePage"></activity>
+        <activity android:name=".help_me"></activity>
+        <activity android:name=".edit_profile" />
+        <activity android:name=".settings" />
+        <activity android:name=".profilePage" />
         <activity android:name=".send_message" />
         <activity android:name=".match_confirmation" />
         <activity android:name=".takeSelfie" />
