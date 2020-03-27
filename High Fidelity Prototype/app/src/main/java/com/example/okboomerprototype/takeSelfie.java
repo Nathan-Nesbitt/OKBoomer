@@ -32,6 +32,7 @@ public class takeSelfie extends AppCompatActivity {
     private String mCurrentPhotoPath;
     private ImageView mImageView;
     Button button;
+    String name;
     private static final int CAMERA_REQUEST = 1888;
     private ImageView imageView;
     private static final int MY_CAMERA_PERMISSION_CODE = 100;
@@ -41,6 +42,8 @@ public class takeSelfie extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_take_selfie);
+        Intent intent = getIntent();
+        name = intent.getStringExtra("name");
         this.imageView = (ImageView)this.findViewById(R.id.imageView4);
         Button photoButton = (Button) this.findViewById(R.id.button2);
         photoButton.setOnClickListener(new View.OnClickListener()
@@ -89,4 +92,14 @@ public class takeSelfie extends AppCompatActivity {
             imageView.setImageBitmap(photo);
         }
     }
+    public void confirmMatch(View view){
+       Intent intent = new Intent(this, match_confirmation.class);
+       intent.putExtra("name", name);
+       startActivity(intent);
+    }
+    public void backMain(View view){
+        Intent intent = new Intent(this, mainSelection.class);
+        startActivity(intent);
+    }
+
 }

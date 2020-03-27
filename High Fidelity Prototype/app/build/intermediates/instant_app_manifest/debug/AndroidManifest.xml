@@ -25,6 +25,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.okboomerprototype.send_message" />
+        <activity android:name="com.example.okboomerprototype.match_confirmation" />
         <activity android:name="com.example.okboomerprototype.takeSelfie" />
         <activity android:name="com.example.okboomerprototype.matchScreen" />
         <activity android:name="com.example.okboomerprototype.specific_chat" />

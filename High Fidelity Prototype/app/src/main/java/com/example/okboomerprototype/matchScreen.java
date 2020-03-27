@@ -14,11 +14,13 @@ public class matchScreen extends AppCompatActivity {
     Intent intent;
     Button b;
     static final int REQUEST_IMAGE_CAPTURE = 1;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_match_screen);
-//        intent = getIntent();
+        intent = getIntent();
+        name = intent.getStringExtra("name");
 //        int img = Integer.parseInt(intent.getStringExtra("userPic"));
         ImageView i = findViewById(R.id.matchee);
         i.setImageResource(R.drawable.sophie);
@@ -26,6 +28,7 @@ public class matchScreen extends AppCompatActivity {
 
     public void sendSelfie(View view){
         intent = new Intent(this, takeSelfie.class);
+        intent.putExtra("name", name);
         startActivity(intent);
     }
 

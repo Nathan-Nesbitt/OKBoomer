@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EEE5FF"
     tools:context=".takeSelfie">
 
     <ImageView
@@ -29,6 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="Take Photo"
+        android:background="#744380"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -40,7 +43,10 @@
         android:layout_marginStart="27dp"
         android:layout_marginLeft="27dp"
         android:layout_marginTop="28dp"
+        android:background="#744380"
+        android:textColor="#FFFFFF"
         android:text="@android:string/no"
+        android:onClick="backMain"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -51,6 +57,9 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="6dp"
         android:layout_marginRight="6dp"
+        android:background="#744380"
+        android:textColor="#FFFFFF"
+        android:onClick="confirmMatch"
         android:text="@android:string/yes"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
