@@ -15,7 +15,7 @@ public class login_or_create extends AppCompatActivity {
     }
 
     public void loginScreen(View view){
-        Intent intent = new Intent(this, mainSelection.class);
+        Intent intent = new Intent(this, login.class);
         startActivity(intent);
     }
 }
