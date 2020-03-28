@@ -213,7 +213,6 @@
                     android:layout_height="37dp"
                     android:layout_marginStart="140dp"
                     android:layout_marginLeft="140dp"
-                    android:layout_marginBottom="4dp"
                     android:background="#744380"
                     android:text="-"
                     android:textColor="#FFFFFF"
