@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-41:12
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-74:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/01aba6feafaa9666a150e0ccab90f24c/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/7805427e3445d32c2ff10acb510a061d/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/75fe1a0d0ea641341446dfd6b8974e96/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
@@ -45,35 +45,51 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.print:print:1.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/28efee2bf1e9a77f569846ad27f8a168/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/929ec10604c047a76453df3294ada6ae/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/c4e2469658fdd8801a5306110b0915fc/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-74:12
 	package
 		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:3:5-44
 		INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-41:12
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-74:12
 		INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-41:12
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:1-74:12
 		INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:10:22-76
 uses-feature#android.hardware.camera
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:5:5-7:35
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:12:5-14:35
 	android:required
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:7:9-32
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:14:9-32
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:6:9-47
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:13:9-47
 uses-permission#android.permission.CAMERA
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:9:5-65
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:16:5-65
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:9:22-62
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:16:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:20:5-22:38
+	android:maxSdkVersion
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:22:9-35
+	android:name
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:21:9-65
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:23:5-25:38
+	android:maxSdkVersion
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:25:9-35
+	android:name
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:24:9-64
 application
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:11:5-39:19
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:26:5-72:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/01aba6feafaa9666a150e0ccab90f24c/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/01aba6feafaa9666a150e0ccab90f24c/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/75fe1a0d0ea641341446dfd6b8974e96/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -97,87 +113,103 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/emil
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/1cd7eff88f5e86d0249af2958bf465f0/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:31:9-35
 	android:label
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:14:9-41
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:29:9-41
 	android:roundIcon
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:15:9-54
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:30:9-54
 	android:icon
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:13:9-43
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:28:9-43
 	android:allowBackup
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:27:9-35
 	android:theme
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:17:9-40
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:32:9-40
+meta-data#com.google.android.gms.version
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:42:9-44:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/c39f27975e2128f358c90a3c3f9b8fee/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/c39f27975e2128f358c90a3c3f9b8fee/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:44:13-66
+	android:name
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:43:13-58
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:45:9-47:55
+	android:value
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:47:13-52
+	android:name
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:46:13-58
+activity#com.example.okboomerprototype.MapsActivity
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:49:9-51:68
+	android:label
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:51:13-56
+	android:name
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:50:13-41
 activity#com.example.okboomerprototype.help_doc
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:18:9-55
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:52:9-46
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:18:19-43
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:52:19-43
 activity#com.example.okboomerprototype.contact_us
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:19:9-48
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:53:9-48
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:19:19-45
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:53:19-45
 activity#com.example.okboomerprototype.help_me
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:20:9-45
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:54:9-45
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:20:19-42
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:54:19-42
 activity#com.example.okboomerprototype.edit_profile
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:21:9-50
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:55:9-50
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:21:19-47
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:55:19-47
 activity#com.example.okboomerprototype.settings
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:22:9-46
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:56:9-46
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:22:19-43
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:56:19-43
 activity#com.example.okboomerprototype.profilePage
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:23:9-49
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:57:9-49
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:23:19-46
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:57:19-46
 activity#com.example.okboomerprototype.send_message
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:24:9-50
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:58:9-50
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:24:19-47
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:58:19-47
 activity#com.example.okboomerprototype.match_confirmation
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:25:9-56
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:59:9-56
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:25:19-53
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:59:19-53
 activity#com.example.okboomerprototype.takeSelfie
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:26:9-48
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:60:9-48
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:26:19-45
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:60:19-45
 activity#com.example.okboomerprototype.matchScreen
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:27:9-49
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:61:9-49
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:27:19-46
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:61:19-46
 activity#com.example.okboomerprototype.specific_chat
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:28:9-51
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:62:9-51
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:28:19-48
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:62:19-48
 activity#com.example.okboomerprototype.message_general
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:29:9-53
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:63:9-53
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:29:19-50
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:63:19-50
 activity#com.example.okboomerprototype.mainSelection
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:30:9-51
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:64:9-51
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:30:19-48
-activity#com.example.okboomerprototype.createAccount1
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:31:9-52
-	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:31:19-49
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:64:19-48
 activity#com.example.okboomerprototype.login_or_create
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:32:9-38:20
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:65:9-71:20
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:32:19-50
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:65:19-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:33:13-37:29
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:66:13-70:29
 action#android.intent.action.MAIN
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:34:17-69
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:67:17-69
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:34:25-66
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:67:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:36:17-77
+ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:69:17-77
 	android:name
-		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:36:27-74
+		ADDED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:69:27-74
 uses-sdk
 INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml
@@ -302,12 +334,6 @@ ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/emilymedema
 		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/6fb3f6cd2b75dfe7dd10f87d94351f9e/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/6fb3f6cd2b75dfe7dd10f87d94351f9e/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/c39f27975e2128f358c90a3c3f9b8fee/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/c39f27975e2128f358c90a3c3f9b8fee/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/c39f27975e2128f358c90a3c3f9b8fee/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
 	android:authorities
