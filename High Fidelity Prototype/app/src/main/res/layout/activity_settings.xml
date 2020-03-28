@@ -11,13 +11,13 @@
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="81dp"
-        android:layout_marginRight="81dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
         android:checked="true"
         android:text="Everyone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapView" />
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -77,22 +77,10 @@
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="25dp"
         android:text="Range (Km Radius):"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBottom_toTopOf="@+id/mapView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
-
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
-        android:layout_width="337dp"
-        android:layout_height="162dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText7" />
 
     <TextView
         android:id="@+id/textView31"
@@ -100,11 +88,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="39dp"
         android:text="Interested in:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -201,10 +189,11 @@
         android:id="@+id/button13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:background="#744380"
+        android:onClick="saveChanges"
         android:text="SAVE"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"

@@ -25,4 +25,8 @@ public class settings extends AppCompatActivity {
         Intent intent = new Intent(this, message_general.class);
         startActivity(intent);
     }
+    public void saveChanges(View view){
+        save_dialogue save = new save_dialogue();
+        save.show(getSupportFragmentManager(), "save changes");
+    }
 }
