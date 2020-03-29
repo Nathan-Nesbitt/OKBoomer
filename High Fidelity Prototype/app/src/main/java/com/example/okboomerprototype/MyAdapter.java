@@ -88,11 +88,11 @@ public class MyAdapter extends RecyclerView.Adapter {
 
         @Override
         public void onClick(View v) {
-            onuser.onUserClick(getAdapterPosition());
+            onuser.contactOnUserClick(getAdapterPosition());
         }
 
         public interface OnUserListener{
-            void onUserClick(int position);
+            void contactOnUserClick(int position);
         }
 
     }

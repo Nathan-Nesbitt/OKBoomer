@@ -10,7 +10,7 @@ import android.view.View;
 
 import java.util.ArrayList;
 
-public class message_general extends AppCompatActivity implements MyAdapter.ContactViewHolder.OnUserListener {
+public class message_general extends AppCompatActivity implements MyAdapter.ContactViewHolder.OnUserListener, matchesAdapter.matchesViewHolder.OnUserListener {
 
 
     private RecyclerView recyclerView;
@@ -20,6 +20,9 @@ public class message_general extends AppCompatActivity implements MyAdapter.Cont
     private RecyclerView.LayoutManager layoutManager;
     ArrayList<String> usersCW;
     ArrayList<Integer> img;
+    ArrayList<String> userMatches;
+    ArrayList<Integer> matchImg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +83,7 @@ public class message_general extends AppCompatActivity implements MyAdapter.Cont
         matchRecyclerView.setAdapter(matchAdapter);
 
         //initialize arrayList for values  (eventually replace with values from database)
-        ArrayList<String> userMatches = new ArrayList<>();
+        userMatches = new ArrayList<>();
         userMatches.add("Alice");
         userMatches.add("Dot");
         userMatches.add("Steve");
@@ -88,7 +91,7 @@ public class message_general extends AppCompatActivity implements MyAdapter.Cont
         userMatches.add("Lorraine");
         userMatches.add("Harry");
         userMatches.add("Beverly");
-        ArrayList<Integer> matchImg = new ArrayList<>();
+        matchImg = new ArrayList<>();
         matchImg.add((R.drawable.alice));
         matchImg.add((R.drawable.dot));
         matchImg.add((R.drawable.steve));
@@ -98,26 +101,40 @@ public class message_general extends AppCompatActivity implements MyAdapter.Cont
         matchImg.add((R.drawable.beverly));
         //System.out.println(matchImg.get(1));
 
-        matchAdapter.setItems(userMatches, matchImg);
+        matchAdapter.setItems(userMatches, matchImg, this);
 
     }
 
 
     @Override
-    public void onUserClick(int position) {
+    public void contactOnUserClick(int position) {
         String user = usersCW.get(position);
         int id = img.get(position);
-        Intent intent = new Intent(this, specific_chat.class);
+        Intent intent;
+        intent = new Intent(this, specific_chat.class);
         intent.putExtra("name", user);
         intent.putExtra("picID", id);
         startActivity(intent);
     }
+
+
     public void toProfile(View view){
         Intent intent = new Intent(this, profilePage.class);
         startActivity(intent);
     }
     public void backMain(View view){
         Intent intent = new Intent(this, mainSelection.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void matchesOnUserClick(int position) {
+        String user = userMatches.get(position);
+        int id = matchImg.get(position);
+        Intent intent;
+        intent = new Intent(this, other_user_profile.class);
+        intent.putExtra("name", user);
+        intent.putExtra("picID", id);
         startActivity(intent);
     }
 }
