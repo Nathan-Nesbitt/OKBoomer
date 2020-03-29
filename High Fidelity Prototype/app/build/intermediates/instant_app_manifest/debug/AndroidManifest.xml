@@ -46,6 +46,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.okboomerprototype.create_account2" />
+        <activity android:name="com.example.okboomerprototype.forgot_Password" />
+        <activity android:name="com.example.okboomerprototype.create_account" />
         <activity android:name="com.example.okboomerprototype.login" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

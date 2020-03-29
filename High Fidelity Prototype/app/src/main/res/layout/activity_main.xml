@@ -30,6 +30,7 @@
         android:layout_marginBottom="128dp"
         android:background="#8D39B4"
         android:text="Create Account"
+        android:onClick="create"
         android:textColor="#F9F9F9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -18,4 +18,8 @@ public class login_or_create extends AppCompatActivity {
         Intent intent = new Intent(this, login.class);
         startActivity(intent);
     }
+    public void create(View view){
+        Intent intent = new Intent(this, create_account.class);
+        startActivity(intent);
+    }
 }

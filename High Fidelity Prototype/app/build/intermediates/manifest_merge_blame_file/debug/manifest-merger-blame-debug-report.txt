@@ -60,7 +60,7 @@
 36-->[com.google.android.gms:play-services-maps:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/edb03ed300512ae8da7c146a103a6c79/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
 37
 38    <application
-38-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:24:5-70:19
+38-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:24:5-73:19
 39        android:allowBackup="true"
 39-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:25:9-35
 40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -77,116 +77,125 @@
 46        android:testOnly="true"
 47        android:theme="@style/AppTheme" >
 47-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:30:9-40
-48        <activity android:name="com.example.okboomerprototype.login" />
-48-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:31:9-52
-48-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:31:19-40
-49        <!--
-50             The API key for Google Maps-based APIs is defined as a string resource.
-51             (See the file "res/values/google_maps_api.xml").
-52             Note that the API key is linked to the encryption key used to sign the APK.
-53             You need a different API key for each encryption key, including the release key that is used to
-54             sign the APK for publishing.
-55             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-56        -->
-57        <meta-data
-57-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:40:9-42:69
-58            android:name="com.google.android.gms.version"
-58-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:41:13-58
-59            android:value="@integer/google_play_services_version" />
-59-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:42:13-66
+48        <activity android:name="com.example.okboomerprototype.create_account2" />
+48-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:31:9-62
+48-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:31:19-50
+49        <activity android:name="com.example.okboomerprototype.forgot_Password" />
+49-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:32:9-53
+49-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:32:19-50
+50        <activity android:name="com.example.okboomerprototype.create_account" />
+50-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:33:9-52
+50-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:33:19-49
+51        <activity android:name="com.example.okboomerprototype.login" />
+51-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:34:9-43
+51-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:34:19-40
+52        <!--
+53             The API key for Google Maps-based APIs is defined as a string resource.
+54             (See the file "res/values/google_maps_api.xml").
+55             Note that the API key is linked to the encryption key used to sign the APK.
+56             You need a different API key for each encryption key, including the release key that is used to
+57             sign the APK for publishing.
+58             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+59        -->
 60        <meta-data
-60-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:43:9-45:55
-61            android:name="com.google.android.geo.API_KEY"
+60-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:43:9-45:69
+61            android:name="com.google.android.gms.version"
 61-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:44:13-58
-62            android:value="@string/google_maps_key" />
-62-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:45:13-52
-63
-64        <activity
-64-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:47:9-49:59
-65            android:name="com.example.okboomerprototype.MapsActivity"
-65-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:48:13-41
-66            android:label="@string/title_activity_maps" />
-66-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:49:13-56
-67        <activity android:name="com.example.okboomerprototype.help_doc" />
-67-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:50:9-46
-67-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:50:19-43
-68        <activity android:name="com.example.okboomerprototype.contact_us" />
-68-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:51:9-48
-68-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:51:19-45
-69        <activity android:name="com.example.okboomerprototype.help_me" />
-69-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:52:9-45
-69-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:52:19-42
-70        <activity android:name="com.example.okboomerprototype.edit_profile" />
-70-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:53:9-50
-70-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:53:19-47
-71        <activity android:name="com.example.okboomerprototype.settings" />
-71-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:54:9-46
-71-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:54:19-43
-72        <activity android:name="com.example.okboomerprototype.profilePage" />
-72-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:55:9-49
-72-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:55:19-46
-73        <activity android:name="com.example.okboomerprototype.send_message" />
+62            android:value="@integer/google_play_services_version" />
+62-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:45:13-66
+63        <meta-data
+63-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:46:9-48:55
+64            android:name="com.google.android.geo.API_KEY"
+64-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:47:13-58
+65            android:value="@string/google_maps_key" />
+65-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:48:13-52
+66
+67        <activity
+67-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:50:9-52:59
+68            android:name="com.example.okboomerprototype.MapsActivity"
+68-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:51:13-41
+69            android:label="@string/title_activity_maps" />
+69-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:52:13-56
+70        <activity android:name="com.example.okboomerprototype.help_doc" />
+70-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:53:9-46
+70-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:53:19-43
+71        <activity android:name="com.example.okboomerprototype.contact_us" />
+71-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:54:9-48
+71-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:54:19-45
+72        <activity android:name="com.example.okboomerprototype.help_me" />
+72-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:55:9-45
+72-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:55:19-42
+73        <activity android:name="com.example.okboomerprototype.edit_profile" />
 73-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:56:9-50
 73-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:56:19-47
-74        <activity android:name="com.example.okboomerprototype.match_confirmation" />
-74-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:57:9-56
-74-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:57:19-53
-75        <activity android:name="com.example.okboomerprototype.takeSelfie" />
-75-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:58:9-48
-75-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:58:19-45
-76        <activity android:name="com.example.okboomerprototype.matchScreen" />
-76-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:59:9-49
-76-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:59:19-46
-77        <activity android:name="com.example.okboomerprototype.specific_chat" />
-77-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:60:9-51
-77-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:60:19-48
-78        <activity android:name="com.example.okboomerprototype.message_general" />
-78-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:61:9-53
-78-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:61:19-50
-79        <activity android:name="com.example.okboomerprototype.mainSelection" />
-79-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:62:9-51
-79-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:62:19-48
-80        <activity android:name="com.example.okboomerprototype.login_or_create" >
-80-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:63:9-69:20
-80-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:63:19-50
-81            <intent-filter>
-81-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:64:13-68:29
-82                <action android:name="android.intent.action.MAIN" />
-82-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:65:17-69
-82-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:65:25-66
-83
-84                <category android:name="android.intent.category.LAUNCHER" />
-84-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:67:17-77
-84-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:67:27-74
-85            </intent-filter>
-86        </activity>
-87        <!-- Needs to be explicitly declared on P+ -->
-88        <uses-library
-88-->[com.google.android.gms:play-services-maps:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/edb03ed300512ae8da7c146a103a6c79/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
-89            android:name="org.apache.http.legacy"
-89-->[com.google.android.gms:play-services-maps:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/edb03ed300512ae8da7c146a103a6c79/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
-90            android:required="false" />
-90-->[com.google.android.gms:play-services-maps:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/edb03ed300512ae8da7c146a103a6c79/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
-91
-92        <activity
-92-->[com.google.android.gms:play-services-base:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/6fb3f6cd2b75dfe7dd10f87d94351f9e/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-93            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-93-->[com.google.android.gms:play-services-base:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/6fb3f6cd2b75dfe7dd10f87d94351f9e/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-94            android:exported="false"
-94-->[com.google.android.gms:play-services-base:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/6fb3f6cd2b75dfe7dd10f87d94351f9e/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-95            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-95-->[com.google.android.gms:play-services-base:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/6fb3f6cd2b75dfe7dd10f87d94351f9e/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-96
-97        <provider
-97-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-98            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-98-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-99            android:authorities="com.example.okboomerprototype.lifecycle-process"
-99-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-100            android:exported="false"
-100-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-101            android:multiprocess="true" />
-101-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-102    </application>
-103
-104</manifest>
+74        <activity android:name="com.example.okboomerprototype.settings" />
+74-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:57:9-46
+74-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:57:19-43
+75        <activity android:name="com.example.okboomerprototype.profilePage" />
+75-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:58:9-49
+75-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:58:19-46
+76        <activity android:name="com.example.okboomerprototype.send_message" />
+76-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:59:9-50
+76-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:59:19-47
+77        <activity android:name="com.example.okboomerprototype.match_confirmation" />
+77-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:60:9-56
+77-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:60:19-53
+78        <activity android:name="com.example.okboomerprototype.takeSelfie" />
+78-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:61:9-48
+78-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:61:19-45
+79        <activity android:name="com.example.okboomerprototype.matchScreen" />
+79-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:62:9-49
+79-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:62:19-46
+80        <activity android:name="com.example.okboomerprototype.specific_chat" />
+80-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:63:9-51
+80-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:63:19-48
+81        <activity android:name="com.example.okboomerprototype.message_general" />
+81-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:64:9-53
+81-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:64:19-50
+82        <activity android:name="com.example.okboomerprototype.mainSelection" />
+82-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:65:9-51
+82-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:65:19-48
+83        <activity android:name="com.example.okboomerprototype.login_or_create" >
+83-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:66:9-72:20
+83-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:66:19-50
+84            <intent-filter>
+84-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:67:13-71:29
+85                <action android:name="android.intent.action.MAIN" />
+85-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:68:17-69
+85-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:68:25-66
+86
+87                <category android:name="android.intent.category.LAUNCHER" />
+87-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:70:17-77
+87-->/Users/emilymedema/Documents/Third Year/COSC 341/Project/OKBoomer/High Fidelity Prototype/app/src/main/AndroidManifest.xml:70:27-74
+88            </intent-filter>
+89        </activity>
+90        <!-- Needs to be explicitly declared on P+ -->
+91        <uses-library
+91-->[com.google.android.gms:play-services-maps:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/edb03ed300512ae8da7c146a103a6c79/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+92            android:name="org.apache.http.legacy"
+92-->[com.google.android.gms:play-services-maps:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/edb03ed300512ae8da7c146a103a6c79/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+93            android:required="false" />
+93-->[com.google.android.gms:play-services-maps:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/edb03ed300512ae8da7c146a103a6c79/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+94
+95        <activity
+95-->[com.google.android.gms:play-services-base:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/6fb3f6cd2b75dfe7dd10f87d94351f9e/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+96            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+96-->[com.google.android.gms:play-services-base:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/6fb3f6cd2b75dfe7dd10f87d94351f9e/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+97            android:exported="false"
+97-->[com.google.android.gms:play-services-base:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/6fb3f6cd2b75dfe7dd10f87d94351f9e/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+98            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+98-->[com.google.android.gms:play-services-base:17.0.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/6fb3f6cd2b75dfe7dd10f87d94351f9e/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+99
+100        <provider
+100-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+101            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+101-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+102            android:authorities="com.example.okboomerprototype.lifecycle-process"
+102-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+103            android:exported="false"
+103-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+104            android:multiprocess="true" />
+104-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilymedema/.gradle/caches/transforms-2/files-2.1/133d3390c58c70ac7467dd72c7251bfe/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+105    </application>
+106
+107</manifest>
