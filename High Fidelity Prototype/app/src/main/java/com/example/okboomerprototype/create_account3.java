@@ -28,6 +28,11 @@ public class create_account3 extends AppCompatActivity {
     int img3;
     int img4;
     int img5;
+    Uri i1;
+    Uri i2;
+    Uri i3;
+    Uri i4;
+    Uri i5;
     private static final int PICK_IMAGE = 100;
     Uri imageUri;
     int changePic = 0;
@@ -59,16 +64,17 @@ public class create_account3 extends AppCompatActivity {
         img5 = (Integer) image1.getTag();
     }
     public void create_account(View view){
-        String filename = "userInfo.txt";
+        String filename = "userImageTags.txt";
         FileOutputStream outputStream;
-        String fileContents = email + "," + img1+"," + img2+","+img3+","+img4+","+img5+","+"\n";
+        String fileContents = email + "," + img1+"," + img2+","+img3+","+img4+","+img5+","+i1+","+i2+","+i3+","+i4+","+i5+","+"\n";
 
         //allow a file to be opened for writing
         try {
             outputStream = openFileOutput(filename, Context.MODE_APPEND);
             outputStream.write(fileContents.getBytes());
             outputStream.close();
-            Intent intent = new Intent(getApplicationContext(), create_account3.class);
+            Intent intent = new Intent(getApplicationContext(), create_account4.class);
+            intent.putExtra("email", email);
             startActivity(intent);
         } catch (Exception e) {
             e.printStackTrace();
@@ -86,15 +92,15 @@ public class create_account3 extends AppCompatActivity {
             imageUri = data.getData();
             switch(changePic){
                 case 1: image1.setImageURI(imageUri);image1.setTag(imageUri);
-                    img1 = (Integer) image1.getTag();break;
+                    i1 = (Uri) image1.getTag();break;
                 case 2: image2.setImageURI(imageUri);image2.setTag(imageUri);
-                    img2 = (Integer) image2.getTag();break;
+                    i2 = (Uri) image2.getTag();break;
                 case 3: image3.setImageURI(imageUri);image3.setTag(imageUri);
-                    img3 = (Integer) image3.getTag();break;
+                    i3 = (Uri) image3.getTag();break;
                 case 4: image4.setImageURI(imageUri);image4.setTag(imageUri);
-                    img4 = (Integer) image4.getTag(); break;
+                    i4 = (Uri) image4.getTag(); break;
                 case 5: image5.setImageURI(imageUri);image5.setTag(imageUri);
-                    img5 = (Integer) image5.getTag();;
+                    i5 = (Uri) image5.getTag();;
             }
         }
     }

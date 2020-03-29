@@ -28,9 +28,9 @@ public class create_account extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
-        email = (EditText) findViewById(R.id.name);
+        email = (EditText) findViewById(R.id.nameInput);
         pass = (EditText) findViewById(R.id.password);
-        confirm_pass = (EditText) findViewById(R.id.age);
+        confirm_pass = (EditText) findViewById(R.id.ageInput);
     }
     public void create_account(View view) throws NoSuchAlgorithmException, InvalidKeySpecException {
         String n = email.getText().toString();

@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -21,14 +20,16 @@ public class create_account2 extends AppCompatActivity {
     private FusedLocationProviderClient fusedLocationClient;
     EditText name;
     EditText age;
-    Button submit;
     Intent intent;
+    String email;
+    String fn = "";
+    int a = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account2);
         intent = getIntent();
-        final String email = intent.getStringExtra("email");
+        email = intent.getStringExtra("email");
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         fusedLocationClient.getLastLocation()
                 .addOnSuccessListener(this, new OnSuccessListener<Location>() {
@@ -41,52 +42,42 @@ public class create_account2 extends AppCompatActivity {
                     }
                 });
 
-        name = (EditText) findViewById(R.id.name);
-        final String fn = name.getText().toString();
-        age = (EditText) findViewById(R.id.age);
-        final String a = age.getText().toString();
-        if(checkValues(fn, a )) {
-            submit = (Button) findViewById(R.id.createBtn);
-            submit.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String filename = "userInfo.txt";
-                    FileOutputStream outputStream;
-                    String fileContents = email + "," + fn + "," + a + "," + "\n";
+        name = findViewById(R.id.nameInput);
+        age = findViewById(R.id.ageInput);
 
-                    //allow a file to be opened for writing
-                    try {
-                        outputStream = openFileOutput(filename, Context.MODE_APPEND);
-                        outputStream.write(fileContents.getBytes());
-                        outputStream.close();
-                        Intent intent = new Intent(getApplicationContext(), create_account3.class);
-                        intent.putExtra("email", email);
-                        startActivity(intent);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
+    }
+    public void create_next(View view){
+        fn = name.getText().toString();
+        System.out.println(fn);
+        String change = age.getText().toString();
+        if (change.equals("")){ // detect an empty string and set it to "0" instead
+            change = "0";
+        }
+        a = Integer.parseInt(change);
+        System.out.println(a);
+        if(checkValues(a)){
+            String filename = "userInfo.txt";
+            FileOutputStream outputStream;
+            String fileContents = email + "," + fn + "," + a + "\n";
+
+            //allow a file to be opened for writing
+            try {
+                outputStream = openFileOutput(filename, Context.MODE_APPEND);
+                outputStream.write(fileContents.getBytes());
+                outputStream.close();
+                Intent intent = new Intent(this, create_account3.class);
+                intent.putExtra("email", email);
+                startActivity(intent);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
-    public boolean checkValues(String fn, String a){
-        if (fn == null || fn.equals("")) {
-            Toast.makeText(getBaseContext(), "Invalid Email", Toast.LENGTH_LONG).show();
-            return false;
-        } else if(a==null || a.equals("") || checkNum(a) == false){
-            Toast.makeText(getBaseContext(),"Passwords do not match!", Toast.LENGTH_LONG).show();
+    public boolean checkValues(int a){
+        if(a < 18){
+            Toast.makeText(getBaseContext(),"Please enter a valid age (must be over 18)", Toast.LENGTH_LONG).show();
             return false;
         }
         return true;
-    }
-    public boolean checkNum(String a){
-        for(int i = 0; i<a.length();i++){
-            if(a.charAt(i) > '0' && a.charAt(i) <'9'){
-                return true;
-            }else{
-                return false;
-            }
-        }
-        return false;
     }
 }

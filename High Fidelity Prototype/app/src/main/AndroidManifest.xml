@@ -29,7 +29,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".create_account3"></activity>
+        <activity android:name=".create_account4"></activity>
+        <activity android:name=".create_account3" />
         <activity android:name=".create_account2" />
         <activity android:name=".forgot_Password" />
         <activity android:name=".create_account" />

@@ -21,6 +21,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- EXTERNAL_STORAGE permissions are optional for Android 6.0 onwards. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="22" />
@@ -46,6 +47,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.okboomerprototype.create_account4" />
+        <activity android:name="com.example.okboomerprototype.create_account3" />
         <activity android:name="com.example.okboomerprototype.create_account2" />
         <activity android:name="com.example.okboomerprototype.forgot_Password" />
         <activity android:name="com.example.okboomerprototype.create_account" />
