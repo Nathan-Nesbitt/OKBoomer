@@ -13,9 +13,10 @@ tools:context=".specific_chat">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reyclerview_message_list"
-        android:layout_width="397dp"
-        android:layout_height="599dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="396dp"
+        android:layout_height="539dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"></androidx.recyclerview.widget.RecyclerView>
@@ -104,4 +105,36 @@ tools:context=".specific_chat">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/small_chat" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileButton">
+
+        <ImageView
+            android:id="@+id/mainPic"
+            android:layout_width="88dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/alice" />
+
+        <TextView
+            android:id="@+id/nameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="48dp"
+            android:text="Alice"
+            app:layout_constraintStart_toStartOf="@+id/mainPic"
+            app:layout_constraintTop_toTopOf="@+id/mainPic" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

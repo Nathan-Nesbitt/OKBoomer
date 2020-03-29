@@ -8,7 +8,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 
@@ -17,6 +20,8 @@ public class specific_chat extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter recyclerAdapter;
     ArrayList<Message> msg;
+    ImageView pic;
+    TextView name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,32 +29,35 @@ public class specific_chat extends AppCompatActivity {
         intent = getIntent();
         String userName = intent.getStringExtra("name");
         int picID = intent.getIntExtra("picID", 0);
-        //Button b = findViewById(R.id.button_chatbox_send);
+        pic = findViewById(R.id.mainPic);
+        name = findViewById(R.id.nameUser);
+        pic.setImageResource(picID);
+        name.setText(userName);
+        int id = intent.getIntExtra("fromId", 0);
 
-        //int picID = 0;
-//        switch(userName){
-//            case "Bob": picID = R.drawable.bob; break;
-//            case "Dot": picID = R.drawable.dot; break;
-//            case "Steve": picID = R.drawable.steve; break;
-//            case "Carl": picID = R.drawable.carl; break;
-//            case "Lorraine": picID = R.drawable.lorrain; break;
-//            case "Harry": picID = R.drawable.harry; break;
-//            case "Beverly": picID = R.drawable.beverly;
-//        }
-        //initialize arrayLists for values (eventually replace with values from the database)
-        msg = new ArrayList<>();
-        Message m = new Message();
-        m.setUserName(userName);
-       // b.setText(m.getUserName());
-        m.setImg(picID);
-       // System.out.println(m.getImg());
-        m.setTime("7:45");
-        m.setMsg("Hey there ;)");
-        msg.add(m);
-        m = new Message();
-        m.setMsg("Hello hello");
-        m.setTime("8:01");
-        msg.add(m);
+        if(id == 0) {
+            //initialize arrayLists for values (eventually replace with values from the database)
+            msg = new ArrayList<>();
+            Message m = new Message();
+            m.setUserName(userName);
+            // b.setText(m.getUserName());
+            m.setImg(picID);
+            // System.out.println(m.getImg());
+            m.setTime("7:45");
+            m.setMsg("Hey there ;)");
+            msg.add(m);
+            m = new Message();
+            m.setMsg("Hello hello");
+            m.setTime("8:01");
+            msg.add(m);
+        }else{
+            msg = new ArrayList<>();
+            Message m = new Message();
+            m.setUserName(userName);
+            // b.setText(m.getUserName());
+            m.setImg(picID);
+            // System.out.println(m.getImg());
+        }
 
         //set up recycler view for messages
         recyclerView = (RecyclerView) findViewById(R.id.reyclerview_message_list);
@@ -58,6 +66,7 @@ public class specific_chat extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         messageAdapter mA = new messageAdapter(this, msg);
         recyclerView.setAdapter(mA);
+
 
         //send to recycler
 //        mA.setItems(msg);

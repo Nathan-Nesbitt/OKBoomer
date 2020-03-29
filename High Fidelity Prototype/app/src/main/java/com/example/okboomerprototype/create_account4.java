@@ -73,7 +73,8 @@ public class create_account4 extends AppCompatActivity {
             outputStream = openFileOutput(filename, Context.MODE_APPEND);
             outputStream.write(fileContents.getBytes());
             outputStream.close();
-            Intent intent = new Intent(getApplicationContext(), mainSelection.class);
+            Intent intent = new Intent(this, mainSelection.class);
+            intent.putExtra("email", email);
             startActivity(intent);
         } catch (Exception e) {
             e.printStackTrace();

@@ -15,6 +15,7 @@ public class matchScreen extends AppCompatActivity {
     Button b;
     static final int REQUEST_IMAGE_CAPTURE = 1;
     String name;
+    ImageView me;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,8 @@ public class matchScreen extends AppCompatActivity {
         name = intent.getStringExtra("name");
 //        int img = Integer.parseInt(intent.getStringExtra("userPic"));
         ImageView i = findViewById(R.id.matchee);
+        me = findViewById(R.id.imageView5);
+        me.setImageResource(R.drawable.user_main);
         i.setImageResource(R.drawable.sophie);
     }
 

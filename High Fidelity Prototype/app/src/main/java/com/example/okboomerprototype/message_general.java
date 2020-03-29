@@ -22,11 +22,14 @@ public class message_general extends AppCompatActivity implements MyAdapter.Cont
     ArrayList<Integer> img;
     ArrayList<String> userMatches;
     ArrayList<Integer> matchImg;
-
+    Intent user;
+    String email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message_general);
+        user = getIntent();
+        email = user.getStringExtra("email");
 
         //set up recycler view for messages
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
@@ -114,6 +117,7 @@ public class message_general extends AppCompatActivity implements MyAdapter.Cont
         intent = new Intent(this, specific_chat.class);
         intent.putExtra("name", user);
         intent.putExtra("picID", id);
+        intent.putExtra("fromId", 0);
         startActivity(intent);
     }
 

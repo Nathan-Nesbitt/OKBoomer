@@ -106,10 +106,10 @@ public class edit_profile extends AppCompatActivity {
     public static void returnVal(int i){
         if(i == 1){
             switch(picRemove){
-                case 1: image1.setImageResource(R.drawable.ic_image_black_24dp);break;
-                case 2: image2.setImageResource(R.drawable.ic_image_black_24dp);break;
-                case 3: image3.setImageResource(R.drawable.ic_image_black_24dp);break;
-                case 4: image4.setImageResource(R.drawable.ic_image_black_24dp);
+                case 1: image1.setImageResource(R.drawable.ic_image_black_biggerdp);break;
+                case 2: image2.setImageResource(R.drawable.ic_image_black_biggerdp);break;
+                case 3: image3.setImageResource(R.drawable.ic_image_black_biggerdp);break;
+                case 4: image4.setImageResource(R.drawable.ic_image_black_biggerdp);
             }
         }
     }

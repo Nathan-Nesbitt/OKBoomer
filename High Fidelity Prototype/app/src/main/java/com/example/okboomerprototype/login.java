@@ -62,6 +62,7 @@ public class login extends AppCompatActivity {
         }else{
             if(checkValidUser(name, pw)){
                 Intent intent = new Intent(this, mainSelection.class);
+                intent.putExtra("email", name);
                 startActivity(intent);
             }else{
                 Toast.makeText(this, "Invalid Password or Email", Toast.LENGTH_SHORT).show();
