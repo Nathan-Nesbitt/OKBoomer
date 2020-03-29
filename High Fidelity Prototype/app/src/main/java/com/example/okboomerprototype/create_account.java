@@ -15,14 +15,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
 import java.security.spec.InvalidKeySpecException;
-import java.security.spec.KeySpec;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
-
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.spec.PBEKeySpec;
 
 public class create_account extends AppCompatActivity {
     EditText email;
@@ -33,9 +28,9 @@ public class create_account extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
-        email = (EditText) findViewById(R.id.email);
+        email = (EditText) findViewById(R.id.name);
         pass = (EditText) findViewById(R.id.password);
-        confirm_pass = (EditText) findViewById(R.id.confirm_pass);
+        confirm_pass = (EditText) findViewById(R.id.age);
     }
     public void create_account(View view) throws NoSuchAlgorithmException, InvalidKeySpecException {
         String n = email.getText().toString();
@@ -64,6 +59,7 @@ public class create_account extends AppCompatActivity {
                 outputStream.write(fileContents.getBytes());
                 outputStream.close();
                 Intent intent = new Intent(this, create_account2.class);
+                intent.putExtra("email", n);
                 startActivity(intent);
             } catch (Exception e) {
                 e.printStackTrace();
