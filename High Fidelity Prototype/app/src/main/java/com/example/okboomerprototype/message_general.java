@@ -96,6 +96,7 @@ public class message_general extends AppCompatActivity implements MyAdapter.Cont
         matchImg.add((R.drawable.lorrain));
         matchImg.add((R.drawable.harry));
         matchImg.add((R.drawable.beverly));
+        //System.out.println(matchImg.get(1));
 
         matchAdapter.setItems(userMatches, matchImg);
 

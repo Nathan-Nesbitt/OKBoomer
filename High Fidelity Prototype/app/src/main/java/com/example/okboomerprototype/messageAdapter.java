@@ -53,13 +53,14 @@ public class messageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             return new ContactViewHolderSent(view);
         }else{
             view = LayoutInflater.from(context).inflate(R.layout.message_received, parent, false);
-            return new ContactViewHolderSent(view);
+            return new ContactViewHolderReceived(view);
         }
 }
 
     @Override
     public void onBindViewHolder( RecyclerView.ViewHolder holder, int position) {
         if(holder instanceof messageAdapter.ContactViewHolderReceived){
+            //System.out.println("here");
             ((messageAdapter.ContactViewHolderReceived)holder).bind(msgs.get(position).getUserName(), msgs.get(position).getTime(), msgs.get(position).getMsg(), msgs.get(position).getImg());
         }else{
             ((messageAdapter.ContactViewHolderSent)holder).bind(msgs.get(position).getMsg(), msgs.get(position).getTime());
@@ -104,6 +105,7 @@ public class messageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             lastTime.setText(time);
             lastMsg.setText(msg);
             userPic.setImageResource(pic);
+           // System.out.println("multiple bind");
         }
 
     }
@@ -125,12 +127,13 @@ public class messageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             lastTime = (TextView) itemView.findViewById(R.id.text_message_time);
             lastMsg = (TextView) itemView.findViewById(R.id.text_message_body);
             userPic = (ImageView) itemView.findViewById(R.id.image_message_profile);
+
         }
         public void bind(String msg, String time){
 
             lastTime.setText(time);
             lastMsg.setText(msg);
-
+            //System.out.println("singlebind");
 
         }
 

@@ -22,4 +22,15 @@ public class other_user_profile extends AppCompatActivity {
         intent = new Intent(this, mainSelection.class);
         startActivity(intent);
     }
+    public void toUser(View view){
+        Intent intent = new Intent(this, profilePage.class);
+        startActivity(intent);
+    }
+
+    public void toUserChat(View view){
+
+    }
+    public void unmatch(View view){
+
+    }
 }

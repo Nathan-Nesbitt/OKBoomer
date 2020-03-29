@@ -42,6 +42,7 @@ public class specific_chat extends AppCompatActivity {
         m.setUserName(userName);
        // b.setText(m.getUserName());
         m.setImg(picID);
+       // System.out.println(m.getImg());
         m.setTime("7:45");
         m.setMsg("Hey there ;)");
         msg.add(m);
