@@ -67,8 +67,7 @@ public class edit_profile extends AppCompatActivity {
         });
     }
     public void toProfile(View view){
-        Intent intent = new Intent(this, profilePage.class);
-        startActivity(intent);
+        finish();
     }
     public void backMain(View view){
         Intent intent = new Intent(this, mainSelection.class);

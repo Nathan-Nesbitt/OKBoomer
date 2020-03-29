@@ -13,6 +13,7 @@ public class forgot_Password extends AppCompatActivity {
         setContentView(R.layout.activity_forgot__password);
     }
     public void submit(View view){
-
+        fp_dialog fp = new fp_dialog();
+        fp.show(getSupportFragmentManager(), "forgot password");
     }
 }
