@@ -14,8 +14,15 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.KeySpec;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
+
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
 
 public class create_account extends AppCompatActivity {
     EditText email;
@@ -30,7 +37,7 @@ public class create_account extends AppCompatActivity {
         pass = (EditText) findViewById(R.id.password);
         confirm_pass = (EditText) findViewById(R.id.confirm_pass);
     }
-    public void create_account(View view) {
+    public void create_account(View view) throws NoSuchAlgorithmException, InvalidKeySpecException {
         String n = email.getText().toString();
         String p = pass.getText().toString();
         String cp = confirm_pass.getText().toString();
@@ -44,12 +51,13 @@ public class create_account extends AppCompatActivity {
             Toast.makeText(getBaseContext(),"Passwords do not match!", Toast.LENGTH_LONG).show();
         }
         else{
-            String filename = "users.txt";
-            String fileContents= n + ","+p + ","+cp+"\n";
             String file2 = "emails.txt";
             String file2contents = n + "\n";
             FileOutputStream outputStream;
             FileOutputStream out2;
+            String filename = "users.txt";
+            String fileContents= n + ","+BCrypt.hashpw(p, BCrypt.gensalt(12)) +"\n";
+
             //allow a file to be opened for writing
             try {
                 outputStream = openFileOutput(filename, Context.MODE_APPEND);

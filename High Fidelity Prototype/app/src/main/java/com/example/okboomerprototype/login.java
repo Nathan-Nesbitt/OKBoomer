@@ -14,13 +14,22 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.KeySpec;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.regex.Pattern;
+
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
 
 public class login extends AppCompatActivity {
     EditText uname;
     EditText pass;
     ArrayList<String> data = new ArrayList<>();
+    ArrayList<String> users = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +39,7 @@ public class login extends AppCompatActivity {
         pass = (EditText) findViewById(R.id.password);
     }
 
-    public void login(View view){
+    public void login(View view) throws InvalidKeySpecException, NoSuchAlgorithmException {
         String name = uname.getText().toString();
         String pw = pass.getText().toString();
         //check if in database
@@ -53,7 +62,6 @@ public class login extends AppCompatActivity {
         }else{
             if(checkValidUser(name, pw)){
                 Intent intent = new Intent(this, mainSelection.class);
-                intent.putExtra("email", name);
                 startActivity(intent);
             }else{
                 Toast.makeText(this, "Invalid Password or Email", Toast.LENGTH_SHORT).show();
@@ -98,26 +106,31 @@ public class login extends AppCompatActivity {
         }
         return false;
     }
-    public boolean checkValidUser(String email, String pw){
+    public boolean checkValidUser(String email, String pw) throws InvalidKeySpecException, NoSuchAlgorithmException {
+
         try {
             FileInputStream fis= openFileInput("users.txt");
             InputStreamReader isr= new InputStreamReader(fis);
             BufferedReader br = new BufferedReader(isr);
             String line;
             while ((line = br.readLine()) != null) {
-                data.add(line);
+                users.add(line);
             }
-            if(data.size()<=0){
-                return true;
+            if(users.size()<=0){
+                return false;
             }else{
-                String [] tokens;
-                for(String x: data){
-                    tokens = x.split(",");
-                    if(tokens[0].equals(email)&&tokens[1].equals(pw)){
-                        return true;
-                    }else{
-                        return false;
+                int match = 0;
+                for(String x:users){
+                    String [] tokens = x.split(",");
+                    System.out.println(Arrays.toString(tokens));
+                    if(tokens[0].equals(email)&& BCrypt.checkpw(pw, tokens[1])){
+                        match++;
                     }
+                }
+                if (match !=0){
+                    return true;
+                }else{
+                    return false;
                 }
             }
             //counter++;
