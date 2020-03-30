@@ -46,24 +46,20 @@ public class create_account3 extends AppCompatActivity {
         image2 = (ImageButton) findViewById(R.id.image2);
         image3 = (ImageButton) findViewById(R.id.image3);
         image4 = (ImageButton) findViewById(R.id.image4);
-        image5 =  findViewById(R.id.image5);
-        image1.setImageResource(R.drawable.stewart0);
-        image1.setTag(R.drawable.stewart0);
-        img1 = (Integer) image1.getTag();
-        image2.setImageResource(R.drawable.stewart1);
-        image2.setTag(R.drawable.stewart1);
-        img2 = (Integer) image2.getTag();
-        image3.setImageResource(R.drawable.stewart2);
-        image3.setTag(R.drawable.stewart2);
-        img3 = (Integer) image3.getTag();
-        image4.setImageResource(R.drawable.stewart3);
-        image4.setTag(R.drawable.stewart3);
-        img4 = (Integer) image4.getTag();
-        image5.setImageResource(R.drawable.stewart4);
-        image5.setTag(R.drawable.stewart4);
-        img5 = (Integer) image1.getTag();
+
     }
     public void create_account(View view){
+        image5 =  findViewById(R.id.image5);
+        image1.setTag(R.drawable.stewart0);
+        img1 = (Integer) image1.getTag();
+        image2.setTag(R.drawable.stewart1);
+        img2 = (Integer) image2.getTag();
+        image3.setTag(R.drawable.stewart2);
+        img3 = (Integer) image3.getTag();
+        image4.setTag(R.drawable.stewart3);
+        img4 = (Integer) image4.getTag();
+        image5.setTag(R.drawable.stewart4);
+        img5 = (Integer) image1.getTag();
         String filename = "userImageTags.txt";
         FileOutputStream outputStream;
         String fileContents = email + "," + img1+"," + img2+","+img3+","+img4+","+img5+","+i1+","+i2+","+i3+","+i4+","+i5+","+"\n";
