@@ -48,22 +48,22 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="161dp"
-        android:layout_height="144dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginRight="108dp"
+        android:layout_width="158dp"
+        android:layout_height="143dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
         app:layout_constraintBottom_toBottomOf="@+id/matchee"
         app:layout_constraintEnd_toEndOf="@+id/matchee"
         app:layout_constraintTop_toTopOf="@+id/matchee"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         tools:srcCompat="@drawable/user_main" />
 
     <ImageView
         android:id="@+id/matchee"
-        android:layout_width="146dp"
-        android:layout_height="136dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginRight="64dp"
+        android:layout_width="158dp"
+        android:layout_height="143dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
         android:layout_marginBottom="115dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"

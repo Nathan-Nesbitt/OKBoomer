@@ -26,7 +26,11 @@ public class matchScreen extends AppCompatActivity {
         ImageView i = findViewById(R.id.matchee);
         me = findViewById(R.id.imageView5);
         me.setImageResource(R.drawable.user_main);
-        i.setImageResource(R.drawable.sophie);
+        if(name == "Sophie"){
+            i.setImageResource(R.drawable.sophie_main);
+        }else{
+            i.setImageResource(R.drawable.chester_main);
+        }
     }
 
     public void sendSelfie(View view){
