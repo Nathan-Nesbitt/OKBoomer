@@ -9,14 +9,14 @@ import android.widget.EditText;
 
 public class settings extends AppCompatActivity {
     EditText radius;
-    int rad = 0;
+    float rad = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         radius = (EditText) findViewById(R.id.editText7);
         String rad = radius.getText().toString();
-        this.rad = Integer.parseInt(rad);
+        this.rad = Float.parseFloat(rad);
     }
     public void toProfile(View view){
         Intent intent = new Intent(this, profilePage.class);

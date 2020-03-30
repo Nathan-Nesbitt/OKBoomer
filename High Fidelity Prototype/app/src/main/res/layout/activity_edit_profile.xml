@@ -41,6 +41,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="#00E9DEFF"
+        android:onClick="toChat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/chat_no_highlight" />

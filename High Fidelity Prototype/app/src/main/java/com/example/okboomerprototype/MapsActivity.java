@@ -6,12 +6,17 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
+import android.graphics.Color;
+import android.location.Address;
 import android.os.Bundle;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.Circle;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -41,7 +46,8 @@ import androidx.appcompat.app.AppCompatActivity;
  * requires forwarding all the important lifecycle methods onto MapView.
  */
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
-
+//    Location currentLocation;
+    Float rad;
     /**
      * Created by User on 10/2/2017.
      */
@@ -60,7 +66,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     return;
                 }
                 mMap.setMyLocationEnabled(true);
-                mMap.getUiSettings().setMyLocationButtonEnabled(false);
+                mMap.getUiSettings().setMyLocationButtonEnabled(true);
 
             }
         }
@@ -81,6 +87,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         protected void onCreate(@Nullable Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_maps);
+            Intent intent = getIntent();
+            rad = intent.getFloatExtra("radius", 0);
 
             getLocationPermission();
         }
@@ -92,17 +100,15 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
             try{
                 if(mLocationPermissionsGranted){
-
-                    final Task location = mFusedLocationProviderClient.getLastLocation();
+                    Task location = mFusedLocationProviderClient.getLastLocation();
                     location.addOnCompleteListener(new OnCompleteListener() {
                         @Override
                         public void onComplete(@NonNull Task task) {
                             if(task.isSuccessful()){
                                 Log.d(TAG, "onComplete: found location!");
                                 Location currentLocation = (Location) task.getResult();
-
                                 moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()),
-                                        DEFAULT_ZOOM);
+                                        7f);
 
                             }else{
                                 Log.d(TAG, "onComplete: current location is null");
@@ -119,6 +125,14 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         private void moveCamera(LatLng latLng, float zoom){
             Log.d(TAG, "moveCamera: moving the camera to: lat: " + latLng.latitude + ", lng: " + latLng.longitude );
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
+            mMap.addCircle(
+                    new CircleOptions()
+                            .center(latLng)
+                            .radius(rad*1000)
+                            .strokeWidth(3f)
+                            .strokeColor(Color.RED)
+                            .fillColor(Color.argb(70, 150, 50, 50))
+            );
         }
 
         private void initMap(){
