@@ -41,7 +41,7 @@ public class create_account extends AppCompatActivity {
         }else if (checkUser(n)){
             Toast.makeText(getBaseContext(), "User already exists", Toast.LENGTH_LONG).show();
         } else if(p==null || p.equals("") || isValid(p)==false){
-            Toast.makeText(getBaseContext(),"Invalid Password!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getBaseContext(),"Invalid Password! Password must have > 8 characters, 1 Capital, 1 number, and 1 symbol.", Toast.LENGTH_LONG).show();
         }else if(cp==null || cp.equals("") || !cp.equals(p)){
             Toast.makeText(getBaseContext(),"Passwords do not match!", Toast.LENGTH_LONG).show();
         }

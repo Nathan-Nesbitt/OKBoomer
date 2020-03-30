@@ -26,7 +26,8 @@ public class matchScreen extends AppCompatActivity {
         ImageView i = findViewById(R.id.matchee);
         me = findViewById(R.id.imageView5);
         me.setImageResource(R.drawable.user_main);
-        if(name == "Sophie"){
+        System.out.println(name);
+        if(name.equals("Sophie")){
             i.setImageResource(R.drawable.sophie_main);
         }else{
             i.setImageResource(R.drawable.chester_main);

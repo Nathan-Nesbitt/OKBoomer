@@ -20,13 +20,14 @@ public class mainSelection extends AppCompatActivity {
     TextView n;
     TextView d;
     TextView age;
+    TextView text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_selection);
 //        ImageView img = findViewById(R.id.imageView8);
 //        cUser = img.getId();
-        TextView text = (TextView) findViewById(R.id.textView3);
+        text = (TextView) findViewById(R.id.textView3);
         name = (String) text.getText();
         user = getIntent();
         email = user.getStringExtra("email");
@@ -34,7 +35,6 @@ public class mainSelection extends AppCompatActivity {
         pic2 = findViewById(R.id.imageView9);
         pic3 = findViewById(R.id.imageView10);
         pic4 = findViewById(R.id.imageView11);
-        n = findViewById(R.id.textView3);
         d = findViewById(R.id.textView5);
         age = findViewById(R.id.textView6);
         age.setText("74");
@@ -57,8 +57,9 @@ public class mainSelection extends AppCompatActivity {
     }
 
     public void dislike(View view){
-        if(n.getText().toString() == "Sophie"){
-            n.setText("Chester");
+        if(text.getText().toString() == "Sophie"){
+            text.setText("Chester");
+            name = (String) text.getText();
             d.setText("15km");
             age.setText("68");
             pic1.setImageResource(R.drawable.chester1);
@@ -66,7 +67,8 @@ public class mainSelection extends AppCompatActivity {
             pic3.setImageResource(R.drawable.chester3);
             pic4.setImageResource(R.drawable.chester4);
         }else{
-            n.setText("Sophie");
+            text.setText("Sophie");
+            name = (String) text.getText();
             d.setText("45km");
             age.setText("74");
             pic1.setImageResource(R.drawable.sophie2);
