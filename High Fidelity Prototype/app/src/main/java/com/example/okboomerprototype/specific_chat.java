@@ -8,12 +8,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class specific_chat extends AppCompatActivity {
     Intent intent;
@@ -22,6 +24,7 @@ public class specific_chat extends AppCompatActivity {
     ArrayList<Message> msg;
     ImageView pic;
     TextView name;
+    EditText chat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +37,7 @@ public class specific_chat extends AppCompatActivity {
         pic.setImageResource(picID);
         name.setText(userName);
         int id = intent.getIntExtra("fromId", 0);
+        chat = findViewById(R.id.edittext_chatbox);
 
         if(id == 0) {
             //initialize arrayLists for values (eventually replace with values from the database)
@@ -81,4 +85,18 @@ public class specific_chat extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void send(View view){
+        Calendar cal = Calendar.getInstance();
+        String hour = "" + cal.get(Calendar.HOUR);
+        String min = "" + cal.get(Calendar.MINUTE);
+        String time = hour + ":" + min;
+        String message = chat.getText().toString();
+        Message m = new Message();
+        m.setMsg(message);
+        m.setTime(time);
+        msg.add(m);
+        messageAdapter mA = new messageAdapter(this, msg);
+        recyclerView.setAdapter(mA);
+
+    }
 }
