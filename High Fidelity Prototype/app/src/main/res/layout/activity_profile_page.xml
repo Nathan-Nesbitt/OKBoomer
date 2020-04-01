@@ -186,7 +186,7 @@
             app:srcCompat="@drawable/stewart3" />
 
         <ImageView
-            android:id="@+id/pic4"
+            android:id="@+id/pic5"
             android:layout_width="103dp"
             android:layout_height="57dp"
             android:layout_marginEnd="4dp"

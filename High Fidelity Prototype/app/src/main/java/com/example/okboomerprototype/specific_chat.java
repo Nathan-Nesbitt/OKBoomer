@@ -77,7 +77,8 @@ public class specific_chat extends AppCompatActivity {
 
     }
     public void chatGeneral(View view){
-        finish();
+        Intent intent = new Intent(this, message_general.class);
+        startActivity(intent);
     }
 
     public void backMain(View view){
