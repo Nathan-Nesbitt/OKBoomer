@@ -14,7 +14,7 @@ import java.io.FileOutputStream;
 
 public class create_account4 extends AppCompatActivity {
     EditText radius;
-    int rad = 0;
+    float rad = 0;
     EditText lowAge;
     int low = 0;
     EditText highAge;
