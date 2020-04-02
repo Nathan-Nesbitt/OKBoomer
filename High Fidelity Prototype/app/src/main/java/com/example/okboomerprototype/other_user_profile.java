@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -79,7 +80,7 @@ public class other_user_profile extends AppCompatActivity {
         startActivity(intent);
     }
     public void unmatch(View view){
-
+        Toast.makeText(this, "Feature not yet implemented", Toast.LENGTH_SHORT).show();
     }
     public void getInfo(){
         try{
