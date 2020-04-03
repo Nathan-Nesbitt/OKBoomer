@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class send_message extends AppCompatActivity {
     String name;
@@ -17,6 +18,12 @@ public class send_message extends AppCompatActivity {
         name = intent.getStringExtra("name");
         picID = intent.getIntExtra("picID", 0);
 
+    }
+    @Override
+    public void onBackPressed(){
+        // super.onBackPressed();
+        Toast.makeText(this,"There is no back action",Toast.LENGTH_LONG).show();
+        return;
     }
 
     public void toMessage(View view){

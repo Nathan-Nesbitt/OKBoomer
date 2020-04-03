@@ -5,13 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class profilePage extends AppCompatActivity {
     Intent intent;
+    String src;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_page);
+    }
+    @Override
+    public void onBackPressed(){
+        // super.onBackPressed();
+        Toast.makeText(this,"There is no back action",Toast.LENGTH_LONG).show();
+        return;
     }
     public void chatGeneral(View view){
         intent = new Intent(this, message_general.class);

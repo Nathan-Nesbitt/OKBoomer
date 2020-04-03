@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class mainSelection extends AppCompatActivity {
     int cUser;
@@ -54,6 +55,12 @@ public class mainSelection extends AppCompatActivity {
         Intent intent = new Intent(this, matchScreen.class);
         intent.putExtra("name", name);
         startActivity(intent);
+    }
+    @Override
+    public void onBackPressed(){
+        // super.onBackPressed();
+        Toast.makeText(this,"There is no back action",Toast.LENGTH_LONG).show();
+        return;
     }
 
     public void dislike(View view){
