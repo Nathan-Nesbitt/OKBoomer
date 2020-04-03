@@ -85,6 +85,10 @@ public class specific_chat extends AppCompatActivity {
         Intent intent = new Intent(this, mainSelection.class);
         startActivity(intent);
     }
+    public void toProfile(View view){
+        Intent intent = new Intent(this, profilePage.class);
+        startActivity(intent);
+    }
 
     public void send(View view){
         Calendar cal = Calendar.getInstance();

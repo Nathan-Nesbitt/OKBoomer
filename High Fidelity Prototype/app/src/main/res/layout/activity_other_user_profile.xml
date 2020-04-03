@@ -17,7 +17,7 @@
         android:background="#00E9DEFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile_highlight" />
+        app:srcCompat="@drawable/smaller_profile" />
 
     <ImageView
         android:id="@+id/imageView"

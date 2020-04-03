@@ -75,7 +75,7 @@ public class create_account extends AppCompatActivity {
     }
     public boolean isValid(String password){
         final String PASSWORD_REGEX =
-                "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,16}$";
+                "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!*_()~`?/.,}{])(?=\\S+$).{8,16}$";
         final Pattern PASSWORD_PATTERN =
                 Pattern.compile(PASSWORD_REGEX);
         // Validate a password

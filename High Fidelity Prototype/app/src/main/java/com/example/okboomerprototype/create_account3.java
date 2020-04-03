@@ -69,7 +69,7 @@ public class create_account3 extends AppCompatActivity {
             outputStream = openFileOutput(filename, Context.MODE_APPEND);
             outputStream.write(fileContents.getBytes());
             outputStream.close();
-            Intent intent = new Intent(getApplicationContext(), create_account4.class);
+            Intent intent = new Intent(getApplicationContext(), create_account_bio.class);
             intent.putExtra("email", email);
             startActivity(intent);
         } catch (Exception e) {

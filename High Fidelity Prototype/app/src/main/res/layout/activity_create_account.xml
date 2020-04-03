@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="About OkBoomer"
+        android:text="How to Create an Account"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.072"
@@ -57,10 +57,10 @@
 
     <TextView
         android:id="@+id/textView39"
-        android:layout_width="362dp"
-        android:layout_height="165dp"
+        android:layout_width="367dp"
+        android:layout_height="163dp"
         android:layout_marginTop="8dp"
-        android:text="@string/okboomer_desc"
+        android:text="@string/createAccount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.408"
         app:layout_constraintStart_toStartOf="parent"

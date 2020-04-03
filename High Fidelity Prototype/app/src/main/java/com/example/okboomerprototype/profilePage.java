@@ -35,4 +35,8 @@ public class profilePage extends AppCompatActivity {
         intent = new Intent(this, edit_profile.class);
         startActivity(intent);
     }
+    public void logout(View view){
+        intent = new Intent(this, login_or_create.class);
+        startActivity(intent);
+    }
 }

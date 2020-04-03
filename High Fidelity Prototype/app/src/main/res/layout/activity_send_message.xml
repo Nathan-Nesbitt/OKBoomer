@@ -52,7 +52,7 @@
         android:layout_marginRight="103dp"
         android:background="#744380"
         android:onClick="backMain"
-        android:text="Keep Swiping"
+        android:text="Keep Browsing"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

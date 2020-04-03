@@ -46,6 +46,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.okboomerprototype.create_account_bio" />
         <activity android:name="com.example.okboomerprototype.other_user_profile" />
         <activity android:name="com.example.okboomerprototype.create_account4" />
         <activity android:name="com.example.okboomerprototype.create_account3" />

@@ -13,7 +13,7 @@ public class fp_dialog extends AppCompatDialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder
-                .setMessage("Please Check Your Email for Password Reset Instructions")
+                .setMessage("This functionality is not yet completed.")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
