@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -24,6 +26,7 @@ public class create_account2 extends AppCompatActivity {
     String email;
     String fn = "";
     int a = 0;
+    Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,10 +47,19 @@ public class create_account2 extends AppCompatActivity {
 
         name = findViewById(R.id.nameInput);
         age = findViewById(R.id.ageInput);
+        spinner = findViewById(R.id.spinner);
+// Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.gender_id, android.R.layout.simple_spinner_item);
+// Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+// Apply the adapter to the spinner
+        spinner.setAdapter(adapter);
 
     }
     public void create_next(View view){
         fn = name.getText().toString();
+        String gender = spinner.getSelectedItem().toString();
         System.out.println(fn);
         String change = age.getText().toString();
         if (change.equals("")){ // detect an empty string and set it to "0" instead
@@ -55,10 +67,10 @@ public class create_account2 extends AppCompatActivity {
         }
         a = Integer.parseInt(change);
         System.out.println(a);
-        if(checkName(fn)&&checkValues(a)){
+        if(checkName(fn)&&checkValues(a)&&checkGender(gender)){
             String filename = "userInfo.txt";
             FileOutputStream outputStream;
-            String fileContents = email + "," + fn + "," + a + "\n";
+            String fileContents = email + "," + fn + "," + a + ","+ gender + "\n";
 
             //allow a file to be opened for writing
             try {
@@ -83,6 +95,14 @@ public class create_account2 extends AppCompatActivity {
     public boolean checkName(String fn){
         if(fn.equals("")){
             Toast.makeText(getBaseContext(),"Please enter a name", Toast.LENGTH_LONG).show();
+            return false;
+        }else{
+            return true;
+        }
+    }
+    public boolean checkGender(String g){
+        if(g.equals("")||g.equals("Select your gender identity")){
+            Toast.makeText(getBaseContext(),"Please select a gender identity", Toast.LENGTH_LONG).show();
             return false;
         }else{
             return true;

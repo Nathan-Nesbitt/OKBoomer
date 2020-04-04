@@ -10,6 +10,24 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string-array name="gender_id">
+        <item>Select your gender identity</item>
+        <item>Man</item>
+        <item>Woman</item>
+        <item>Transgender</item>
+        <item>Genderqueer</item>
+        <item>Agender</item>
+        <item>Genderless</item>
+        <item>Non-binary</item>
+        <item>Cis Man</item>
+        <item>Cis Woman</item>
+        <item>Trans Man</item>
+        <item>Trans Woman</item>
+        <item>Third Gender</item>
+        <item>Two-Spirit</item>
+        <item>Bigender</item>
+        <item>Genderfluid</item>
+    </string-array>
     <string name="unmatch">To unmatch you will have to:\n
     1. Navigate to the general chat page.\n
     2. Click on the icon of the person you want to unmatch with along the top, scrolling horizontally if needed.\n
