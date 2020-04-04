@@ -55,10 +55,8 @@ public class login extends AppCompatActivity {
         }
         if(TextUtils.isEmpty(name)|| name.equals("") || !name.contains("@")){
             Toast.makeText(this, "Please Enter an Email", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(pw)||pw.equals("")){
+        }else if(TextUtils.isEmpty(pw)||pw.equals("")) {
             Toast.makeText(this, "Please Enter a Password", Toast.LENGTH_SHORT).show();
-        }else if(isValid(pw) == false){
-            Toast.makeText(this, "Invalid Password!", Toast.LENGTH_SHORT).show();
         }else{
             if(checkValidUser(name, pw)){
                 Intent intent = new Intent(this, mainSelection.class);
@@ -68,19 +66,6 @@ public class login extends AppCompatActivity {
                 Toast.makeText(this, "Invalid Password or Email", Toast.LENGTH_SHORT).show();
             }
 
-        }
-    }
-    public boolean isValid(String password){
-        final String PASSWORD_REGEX =
-                "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,16}$";
-        final Pattern PASSWORD_PATTERN =
-                Pattern.compile(PASSWORD_REGEX);
-        // Validate a password
-        if (PASSWORD_PATTERN.matcher(password).matches()) {
-            return true;
-        }
-        else {
-            return false;
         }
     }
     public void forgotPassword(View view){
