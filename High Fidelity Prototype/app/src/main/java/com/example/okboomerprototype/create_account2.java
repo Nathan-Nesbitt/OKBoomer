@@ -55,7 +55,7 @@ public class create_account2 extends AppCompatActivity {
         }
         a = Integer.parseInt(change);
         System.out.println(a);
-        if(checkValues(a)){
+        if(checkName(fn)&&checkValues(a)){
             String filename = "userInfo.txt";
             FileOutputStream outputStream;
             String fileContents = email + "," + fn + "," + a + "\n";
@@ -79,5 +79,13 @@ public class create_account2 extends AppCompatActivity {
             return false;
         }
         return true;
+    }
+    public boolean checkName(String fn){
+        if(fn.equals("")){
+            Toast.makeText(getBaseContext(),"Please enter a name", Toast.LENGTH_LONG).show();
+            return false;
+        }else{
+            return true;
+        }
     }
 }
